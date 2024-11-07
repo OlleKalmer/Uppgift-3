@@ -1,0 +1,161 @@
+body {
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 175px auto;
+    grid-template-rows: 300px auto auto 200px;
+    grid-template-areas:
+        "header header"
+        "nav main2"
+        "main3 main"
+        "footer footer";
+}
+
+body>* {
+    padding: 10px;
+    border-radius: 1%;
+}
+
+
+#Omossbox~.box {
+    display: none;
+}
+
+#Omossbox:checked~.box {
+    display: list-item;
+}
+
+#Produkterbox~.box1 {
+    display: none;
+}
+
+#Produkterbox:checked~.box1 {
+    display: list-item;
+}
+
+header a:hover {
+    transform: scale(101%);
+    transition: 0, 5s;
+}
+
+header a {
+    font-size: 400%;
+}
+
+.mainhem {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+}
+
+.mainhem a:hover {
+    transform: scale(101%);
+    transition: 0, 5s;
+}
+
+.mainhem a {
+    font-size: 300%;
+}
+
+.main2 {
+    grid-area: main2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main2 a {
+    font-size: 300%;
+}
+
+.main2 a:hover {
+    transform: scale(101%);
+    transition: 0, 5s;
+}
+
+body img {
+    max-width: 100%;
+    border-radius: 1%;
+}
+
+
+nav li:hover {
+    background-color: aliceblue;
+    transition: 0, 1s;
+}
+
+p {
+    font-size: 25px;
+    background-color: lightblue;
+}
+
+#JHO {
+    grid-area: main2;
+}
+
+#FBSV {
+    grid-area: main2;
+}
+
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    background-image: url(/Bilder/bakgrundsbilder/stockholmskväll.jpg);
+}
+
+nav {
+    grid-area: nav;
+    background-color: lightgreen;
+}
+
+.Omossmain>h1:hover {
+    transform: scale(101%);
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: lightgreen;
+}
+
+footer li {
+    display: inline;
+    justify-content: space-between;
+}
+
+#main2 {
+    grid-area: main;
+}
+
+#Produkternamain {
+    grid-area: main2;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+fieldset * {
+    display: flex;
+}
+
+table {
+    padding: 10px;
+}
+
+th {
+    padding: 10px;
+}
+
+form {
+    grid-area: main;
+}
+
+@media screen and (max-width:300px) {}
+
+@media screen and (max-width:1080px) {}
